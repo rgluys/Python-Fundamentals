@@ -41,6 +41,7 @@ Basic logging is implemented and this sample contains functions, loops, logical 
 **Player turn:** enter_move -> display_board -> make_list_of_free_fields -> display_board -> victory_for -> draw_move
 
 ![TicTacToe](tictactoe.gif?v=4&s=700)
+<img src="tictactoe.gif" height="400" width="700">
 
 ### Logging
 
