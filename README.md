@@ -73,3 +73,20 @@ This function flips the sign  from 'X's" to "O's" which is used to signify who's
 Here is the output of the function:  A drawn empty board and the first move by the PC.  An "X" at position 5.
 
 ![functionresult](functionresult.png)
+
+### Space-Time Complexity - Big O
+
+Here are 2 examples, in the Tic-Tac-Toe application where the time and space complexity are both O(n):
+
+A set operation:  This set operation iterates through a finite list of 9 values and if the board's square isn't already set then board's square is set to equal the sign.
+
+![setOerationBigO](setOerationBigO.png)
+
+This example uses linear search to iterate through the finite list of winning cobination and performs a series of true/false checks to determin if the player has, in fact, set the board to equal one of the winning combinations.  BigO representation of O(n) here is the ideal scenerio for a search operation.
+
+The finite list of lookup values.  They are represent as a list of tuples for each possible board combination:
+![linearlookupBigO1](linearlookupBigO1.png)
+
+A while statement that loops through the possible winning combinations. If a winning combination is determined to be true (and if the sign is set to the player) the application prints that the game has ended and the player won.  If the sign that represents the PC is set then the application prints that the PC won and the game is over:
+
+![linearlookupBigO2](linearlookupBigO2.png)
