@@ -80,7 +80,7 @@ Here are 2 examples, in the Tic-Tac-Toe application where the time and space com
 
 A set operation:  This set operation iterates through a finite list of 9 values and if the board's square isn't already set then board's square is set to equal the sign.
 
-![setOerationBigO](setOerationBigO.png)
+![setOperationBigO](setOerationBigO.png)
 
 This example uses linear search to iterate through the finite list of winning cobination and performs a series of true/false checks to determin if the player has, in fact, set the board to equal one of the winning combinations.  BigO representation of O(n) here is the ideal scenerio for a search operation.
 
