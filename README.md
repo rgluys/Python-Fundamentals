@@ -6,15 +6,16 @@ The purpose of this document is demonstrate Python programming fundamentals and 
 
 ## Tic-Tac-Toe Game
 
-This is a Python Institute Challenge, written for Google Colab/Jupyter Notebook execution.  It is a monlithic program written entirely in Python and leverages included python libraries and the random, sys, logging, and datetime libraries.
+This is a Python Institute Challenge, written for Google Colab/Jupyter Notebook execution.  It is a monlithic program written entirely in Python and leverages standard python libraries and the random, sys, logging, and datetime libraries.
 
 **Game Overview**
 
 This is the game of tic-tac-toe.  The board is, first, drawn on screen with a number representing each square from 1-9. Secondly, the computer always makes the first move by entering an 'X' in the center square.  The player selects an available square by indicating the  number listed on their chosen square.  An 'O' is entered in the square they select.  With the computer's remaining moves, a random square is selected from the remaining available squares.  Turns are alternated until a winner is achieved by entering 3 of their letters in-a-row either up-and-down, across, or diaganally.  The winner will display on the screen and the game is over once a victor is achieved.  
 
-Basic logging is implemented and this sample contains functions, loops, logical expressions, and numerous basic operations.
+You will see that basic logging has been implemented and this sample contains functions, loops, logical expressions, and numerous basic operations.
 
 
+Here is a list of the steps used to generate the application from a functional perspective.  Each application function is called.  Each step below contains a short description of what the function does:
 
 **Functional programming steps:**
 1. Call new_game and set the sign to X (Pc's move) and build the board.
@@ -33,12 +34,16 @@ Basic logging is implemented and this sample contains functions, loops, logical 
         If X' or O' won print winner.  The game is over.
 13. If no winner, repeat steps 1-12 until game is over.
 
-
+Here is a diagram containing the order inwhich each function is called for the PC or Player's move:
 
 #### **Function Workflow:**
 **Computer turn:** new_game -> display_board ->  draw_move -> display_board -> make_list_of_free_fields -> display_board -> victory_for
 
 **Player turn:** enter_move -> display_board -> make_list_of_free_fields -> display_board -> victory_for -> draw_move
+
+## Game Play
+
+Here is the game play in action.  The game board and PC's first move is made.  I enter a number for each of my moves.  THe PC and I alternate moves until the game is over:
 
 <img src="tictactoe.gif" height="400" width="800">
 
