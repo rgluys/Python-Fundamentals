@@ -57,3 +57,19 @@ Logging configuration with a timestamp set to info.  The logged entries will be 
 Example logging entires in logged file 'myapp.log':
 
 ![Logging3](logging3.png)
+
+### Functions, Loops, Logical Expressions and Basic Operations
+
+Function to build and draw the board on screen.  The intital board contains values from 1 through 9.  The computer's intitial move is drawn to the screen at square 5.  The function has a 'For' statement that creates the unique rows needed to draw the board and leverages arrays to populate the variable information on the board.  You can see proper use of docstrings here.
+
+![function1](function1.png)
+
+
+This function flips the sign  from 'X's" to "O's" which is used to signify who's turn it is.  Next, the function calls 'victor_for'.  The victor_for' is a function that determines if a player has scored 3-in-a-row. The game is ends when one player scores 3-in-a-row.  If there is no winner, then this function calls a distinct function for each player that handles each their move.  This example demonstrates basic operations, data types, and logical expressions including if/else statements.
+
+![function2](function2.png)
+
+
+Here is the output of the function:  A drawn empty board and the first move by the PC.  An "X" at position 5.
+
+![functionresult](functionresult.png)
