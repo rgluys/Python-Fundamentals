@@ -15,7 +15,7 @@ This is the game of tic-tac-toe.  The board is, first, drawn on screen with a nu
 You will see that basic logging has been implemented and this sample contains functions, loops, logical expressions, and numerous basic operations.
 
 
-Here is a list of the steps used to generate the application from a functional perspective.  Each application function is called.  Each step below contains a short description of what the function does:
+Here is a list of the steps used to generate the application from a functional perspective.  Each application function is noted and called within each step.  The step, also, contain a short description of what the function does:
 
 **Functional programming steps:**
 1. Call new_game and set the sign to X (Pc's move) and build the board.
@@ -34,7 +34,7 @@ Here is a list of the steps used to generate the application from a functional p
         If X' or O' won print winner.  The game is over.
 13. If no winner, repeat steps 1-12 until game is over.
 
-Here is a diagram containing the order inwhich each function is called for the PC or Player's move:
+Here is a diagram containing the order in which each function is called for the PC or Player's move:
 
 #### **Function Workflow:**
 **Computer turn:** new_game -> display_board ->  draw_move -> display_board -> make_list_of_free_fields -> display_board -> victory_for
@@ -43,7 +43,7 @@ Here is a diagram containing the order inwhich each function is called for the P
 
 ## Game Play
 
-Here is the game play in action.  The game board and PC's first move is made.  I enter a number for each of my moves.  THe PC and I alternate moves until the game is over:
+Here is the game play in action.  The game board and PC's first move is made.  I enter a number for each of my moves.  The PC and I alternate moves until the game is over:
 
 <img src="tictactoe.gif" height="400" width="800">
 
