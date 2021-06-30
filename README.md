@@ -1,6 +1,6 @@
 # Python Fundamentals
 
-**Overview:**
+**Overview**
 
 The purpose of this document is demonstrate Python programming fundamentals and save time by replace the need for a live technical assessment.  I wrote a game of tic-tac-toe in Python based on a challenge in the Python Institute's basic certification course.  You will observe a wide range of Python and coding practices such as docstrings, logging, functions, basic operations, data storage formats, and logical expressions such as if/else and while statements.
 
