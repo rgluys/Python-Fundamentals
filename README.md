@@ -73,16 +73,16 @@ This function adds each unique row of the board to a variable then builds the bo
 ![function2](function2.png)
 
 
-Here is the output of the function:  A drawn empty board and the first move by the PC.  An "X" is placed at position 5.
+Here is the output of the function:  An empty board and the first move by the PC are printed to the screen.  An "X" is placed at position 5.
 
 ![functionresult](functionresult.png)
 
 ### Space & Time Complexity - Big O
 
-Here are 2 examples, when expressed in BigO time complexity notation, or the worst case, are both O(n).  Their space complexity is O(1):
+Here are 2 examples, when expressed in BigO time complexity notation (worst case scenario) are both O(n).  Their space complexity is O(1):
 
 ## Example 1
-**Time Complexity:**. A set operation with a logical expression.  The set operation iterates is O(1). The 'for' logical expression iterates through a finite list of 9 values which is a linear operation.  This operation is o(n).  Since Big O notation represents the worst case scenerio, this function has a Big O representation of O(n). 
+**Time Complexity:**. A set operation with a logical expression.  The set operation is O(1). The 'for' logical expression iterates through a finite list of 9 values which is a linear operation.  This operation is O(n).  Since Big O notation represents the worst case scenerio, this function has a Big O representation of O(n). 
 
 **Space Complexity:**. The space complexity is O(1) as the set operation requires constant storage space.
 
@@ -94,8 +94,8 @@ The finite list of lookup values that represent the winning board combinations a
 
 ![linearlookupBigO1](linearlookupBigO1.png)
 
-**Time Complexity:**  A while statement that loops through the possible winning combinations. If a winning combination is determined to be true (and if the sign is set to the player) the application prints that the game has ended and the player won.  If the sign that represents the PC is set then the application prints that the PC won and the game is over.  THe print functions are O(1) operations.  The if and when statements are linear expressions which are, in Big O notation, O(1).  Because the worst case amongst all operations is O(1), this function will perform in O(1) Big O representation.
+**Time Complexity:**  A while statement, that loops through the possible winning combinations, is called. If a winning combination is determined to be true (and if the sign is set to the player) the application prints that the game has ended and the player won.  If the sign that represents the PC is set then the application prints that the PC won and the game is over.  The print functions are O(1) operations as they take the same time to complete with each call.  The if and when statements are linear expressions which are, in Big O notation, O(1).  Because the worst case amongst all operations is O(1), this function will perform in O(1) Big O representation.
 
-**Space Complexity:**. The print and variable set opertaions requre constant space.  This function has a space complexity represented as O(1).
+**Space Complexity:**. The print and variable set operations require constant space.  This function has a space complexity represented as O(1).
 
 ![linearlookupBigO2](linearlookupBigO2.png)
