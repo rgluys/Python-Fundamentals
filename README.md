@@ -43,7 +43,7 @@ Here is a list of the steps used to generate the application from a functional p
 
 Here is the game play in action.  The game board and PC's first move is immediately printed.  The player enters a number for each of their chosen moves.  The PC and the player alternate moves until the game is over.  THe player wins in this short video.
 
-<img src="tictactoe.gif" height="400" width="800">
+<img src="tictactoe.gif" height="400" width="1200">
 
 ### Logging
 
