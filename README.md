@@ -2,20 +2,18 @@
 
 **Overview:**
 
-The purpose of this document is demonstrate Python programming fundamentals and save time by replace the need for a live technical assessment.  I wrote a game of tic-tac-toe in Python based on a challenge in the Python Institute's basic certification course.  You will observe a wide range of Python and coding practices included like logging, functions, basic operations, data storage formats, and logical expressions.
+The purpose of this document is demonstrate Python programming fundamentals and save time by replace the need for a live technical assessment.  I wrote a game of tic-tac-toe in Python based on a challenge in the Python Institute's basic certification course.  You will observe a wide range of Python and coding practices such as docstrings, logging, functions, basic operations, data storage formats, and logical expressions such as if/else and while statements.
 
 ## Tic-Tac-Toe Game
 
-This is a Python Institute Challenge, written for Google Colab/Jupyter Notebook execution.  It is a monlithic program written entirely in Python and leverages standard python libraries and the random, sys, logging, and datetime libraries.
+This is based on a Python Institute Challenge. It is written for Google Colab/Jupyter Notebook execution.  It is a monlithic program written entirely in Python and leverages standard python libraries as well as the random, sys, logging, and datetime libraries.
 
 **Game Overview**
 
-This is the game of tic-tac-toe.  The board is, first, drawn on screen with a number representing each square from 1-9. Secondly, the computer always makes the first move by entering an 'X' in the center square.  The player selects an available square by indicating the  number listed on their chosen square.  An 'O' is entered in the square they select.  With the computer's remaining moves, a random square is selected from the remaining available squares.  Turns are alternated until a winner is achieved by entering 3 of their letters in-a-row either up-and-down, across, or diaganally.  The winner will display on the screen and the game is over once a victor is achieved.  
-
-You will see that basic logging has been implemented and this sample contains functions, loops, logical expressions, and numerous basic operations.
+The classic game of tic-tac-toe.  The board is, first, printed on screen with a number representing each square from 1-9. The computer always makes the first move by entering an 'X' in the center square.  The player, then, selects an available square by indicating the  number listed on their chosen square.  An 'O' is entered in the square they select.  With the computer's remaining moves, a random square is selected from the remaining available squares.  Turns are alternated until a winner is achieved by either player obtaining 3 of their letters in-a-row.  The available ways to win are up-and-down, across, or diaganally.  When a winner is achieved a message prints on screen saying who won and that the game is over.
 
 
-Here is a list of the steps used to generate the application from a functional perspective.  Each application function is noted and called within each step.  The step, also, contain a short description of what the function does:
+Here is a list of the steps used to generate the application from a functional perspective.  Each function in the application is noted and called within each step.  The step, also, contain a short description of what the function does:
 
 **Functional programming steps:**
 1. Call new_game and set the sign to X (Pc's move) and build the board.
@@ -34,7 +32,7 @@ Here is a list of the steps used to generate the application from a functional p
         If X' or O' won print winner.  The game is over.
 13. If no winner, repeat steps 1-12 until game is over.
 
-Here is a diagram containing the order in which each function is called for the PC or Player's move:
+*Here is a diagram containing the order in which each function is called for the PC or Player's move:*
 
 #### **Function Workflow:**
 **Computer turn:** new_game -> display_board ->  draw_move -> display_board -> make_list_of_free_fields -> display_board -> victory_for
@@ -43,13 +41,13 @@ Here is a diagram containing the order in which each function is called for the 
 
 ## Game Play
 
-Here is the game play in action.  The game board and PC's first move is made.  I enter a number for each of my moves.  The PC and I alternate moves until the game is over:
+Here is the game play in action.  The game board and PC's first move is immediately printed.  The player enters a number for each of their chosen moves.  The PC and the player alternate moves until the game is over.  THe player wins in this short video.
 
 <img src="tictactoe.gif" height="400" width="800">
 
 ### Logging
 
-Simplified logging function with a custom entry that can be placed anywhere in the application.  This useful for debugging and generating audit trails:
+Simplified logging function with a custom entry that can be placed anywhere in the application.  This method is useful for debugging, generating business-focused data, and audit trails:
 
 ![Logging1](logging1.png)
 
@@ -70,12 +68,12 @@ Function to build and draw the board on screen.  The intital board contains valu
 ![function1](function1.png)
 
 
-This function flips the sign  from 'X's" to "O's" which is used to signify who's turn it is.  Next, the function calls 'victor_for'.  The victor_for' is a function that determines if a player has scored 3-in-a-row. The game is ends when one player scores 3-in-a-row.  If there is no winner, then this function calls a distinct function for each player that handles each their move.  This example demonstrates basic operations, data types, and logical expressions including if/else statements.
+This function adds each unique row of the board to a variable then builds the board from these variables then prints them to the screen.  The function flips the sign  from 'X's" to "O's" which is used to signify who's turn it is.  Next, the function calls 'victor_for'.  The victor_for' is a function that determines if a player has scored 3-in-a-row. The game is ends when one player scores 3-in-a-row.  If there is no winner, then this function calls a distinct function for each player that handles each their move.  This example demonstrates basic operations, data types, and logical expressions including if/else statements.
 
 ![function2](function2.png)
 
 
-Here is the output of the function:  A drawn empty board and the first move by the PC.  An "X" at position 5.
+Here is the output of the function:  A drawn empty board and the first move by the PC.  An "X" is placed at position 5.
 
 ![functionresult](functionresult.png)
 
