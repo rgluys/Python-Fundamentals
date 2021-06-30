@@ -77,21 +77,25 @@ Here is the output of the function:  A drawn empty board and the first move by t
 
 ![functionresult](functionresult.png)
 
-### Space-Time Complexity - Big O
+### Space & Time Complexity - Big O
 
-Here are 2 examples, in the Tic-Tac-Toe application where the time and space complexity are both O(n):
+Here are 2 examples, when expressed in BigO time complexity notation, or the worst case, are both O(n).  Their space complexity is O(1):
 
 ## Example 1
-A set operation:  This set operation iterates through a finite list of 9 values and if the board's square isn't already set then board's square is set to equal the sign.
+**Time Complexity:**. A set operation with a logical expression.  The set operation iterates is O(1). The 'for' logical expression iterates through a finite list of 9 values which is a linear operation.  This operation is o(n).  Since Big O notation represents the worst case scenerio, this function has a Big O representation of O(n). 
+
+**Space Complexity:**. The space complexity is O(1) as the set operation requires constant storage space.
 
 ![setOperationBigO](setOperationBigO.png)
 
-This example uses linear search to iterate through the finite list of winning cobination and performs a series of true/false checks to determin if the player has, in fact, set the board to equal one of the winning combinations.  BigO representation of O(n) here is the ideal scenerio for a search operation.
 
 ## Example 2
-The finite list of lookup values.  They are represent as a list of tuples for each possible board combination:
+The finite list of lookup values that represent the winning board combinations are represented as a list of tuples:
+
 ![linearlookupBigO1](linearlookupBigO1.png)
 
-A while statement that loops through the possible winning combinations. If a winning combination is determined to be true (and if the sign is set to the player) the application prints that the game has ended and the player won.  If the sign that represents the PC is set then the application prints that the PC won and the game is over:
+**Time Complexity:**  A while statement that loops through the possible winning combinations. If a winning combination is determined to be true (and if the sign is set to the player) the application prints that the game has ended and the player won.  If the sign that represents the PC is set then the application prints that the PC won and the game is over.  THe print functions are O(1) operations.  The if and when statements are linear expressions which are, in Big O notation, O(1).  Because the worst case amongst all operations is O(1), this function will perform in O(1) Big O representation.
+
+**Space Complexity:**. The print and variable set opertaions requre constant space.  This function has a space complexity represented as O(1).
 
 ![linearlookupBigO2](linearlookupBigO2.png)
